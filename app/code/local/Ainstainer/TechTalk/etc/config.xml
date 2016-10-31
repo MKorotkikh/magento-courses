@@ -5,11 +5,34 @@
             <version>0.0.1</version>
         </Ainstainer_TechTalk>
     </modules>
+    <frontend>
+        <routers>
+            <techtalk>
+                <use>standard</use>
+                <args>
+                    <module>Ainstainer_TechTalk</module>
+                    <frontName>techtalk</frontName>
+                </args>
+            </techtalk>
+        </routers>
+        <layout>
+            <updates>
+                <techtalk>
+                    <file>techtalk.xml</file>
+                </techtalk>
+            </updates>
+        </layout>
+    </frontend>
     <global>
         <models>
             <techtalk>
                 <class>Ainstainer_TechTalk_Model</class>
             </techtalk>
         </models>
+        <blocks>
+            <techtalk>
+                <class>Ainstainer_TechTalk_Block</class>
+            </techtalk>
+        </blocks>
     </global>
 </config>
