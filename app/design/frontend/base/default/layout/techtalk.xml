@@ -5,4 +5,9 @@
             <block type="techtalk/view" name="techtalk.hello"/>
         </reference>
     </techtalk_index_index>
+    <techtalk_index_view>
+        <reference name="content">
+            <block type="techtalk/view" name="techtalk.contact" template="ain/contact/view.phtml"/>
+        </reference>
+    </techtalk_index_view>
 </layout>
