@@ -38,6 +38,11 @@
                 </entities>
             </techtalk_resource>
         </models>
+        <helpers>
+            <techtalk>
+                <class>Ainstainer_TechTalk_Helper</class>
+            </techtalk>
+        </helpers>
         <resources>
             <techtalk_setup>
                 <setup>
@@ -51,4 +56,15 @@
             </techtalk>
         </blocks>
     </global>
+    <admin>
+        <routers>
+            <adminhtml>
+                <args>
+                    <modules>
+                        <ain_contacts before="Mage_Adminhtml">Ainstainer_TechTalk_Adminhtml</ain_contacts>
+                    </modules>
+                </args>
+            </adminhtml>
+        </routers>
+    </admin>
 </config>
